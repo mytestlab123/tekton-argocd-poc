@@ -7,8 +7,8 @@ metadata:
   namespace: argocd
 type: Opaque
 stringData:
-  username: tekton
-  password: ## INSERT TOKEN HERE
+  username: amitkarpe
+  password: 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
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -20,7 +20,7 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   repositories: |
-    - url: https://github.com/jaruizes/tekton-argocd-poc
+    - url: https://github.com/mytestlab123/tekton-argocd-poc
       passwordSecret:
         name: repo-gitops
         key: password
